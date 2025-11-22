@@ -1,0 +1,92 @@
+/* ---------------------- */
+/*     ESTILOS GLOBALES   */
+/* ---------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f1f1f1;
+    color: #222;
+}
+
+/* ---------------------- */
+/*        NAVBAR          */
+/* ---------------------- */
+header {
+    background: #1e1e1e;
+    padding: 15px 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+nav .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav .menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav .menu li a:hover,
+nav .menu li a.active {
+    color: #4da3ff;
+}
+
+/* ---------------------- */
+/*        HERO            */
+/* ---------------------- */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+/* ---------------------- */
+/*       BOTÓN            */
+/* ---------------------- */
+button, .btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    background: #4da3ff;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover, .btn:hover {
+    background: #1e80ff;
+}
+
+/* ---------------------- */
+/*        FOOTER          */
+/* ---------------------- */
