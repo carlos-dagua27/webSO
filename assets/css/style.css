@@ -7,8 +7,8 @@
 }
 
 body {
-    background: #ffffff;
-    color: #222;
+    background: #000000;
+    color: #ffffff;
 }
 
 header {
@@ -47,7 +47,7 @@ header {
 }
 
 .introduccion {
-    background-color: #1e80ff;
+    background-color: oklab(61.821000000000005% -0.04441 -0.2032);
     padding: 7vw;
     margin: 1vW 2vw;
     border-radius: 3vw;
@@ -61,42 +61,114 @@ header {
 }
 
 .actividad1punto1 {
-    background-color: rgb(207, 227, 234);
+    background-color: rgb(48, 48, 49);
     padding: 5vw;
     margin: 1vW 2vw;
     border-radius: 3vw;
 }
 
 .actividad1punto2 {
-    background-color: rgb(186, 200, 205);
-    padding: 5vw;
-    margin: 1vW 2vw;
+    background-color: rgb(0, 0, 0);
+    padding: 0 0vw 10vw ;
+    margin: 0vw 2vw;
     border-radius: 3vw;
+    text-align: center;
+}
+
+.borde {
+    background-color: rgb(0, 0, 0);
+    border-radius: 0vw 0 0;
+    text-align: center;
+    padding: 1vw;
+
+} 
+
+.video-install video {
+    width: 100%;       /* Ocupa todo el ancho disponible */
+    max-width: 600px;  /* Tamaño máximo del video */
+    height: auto;      /* Mantiene proporción */
+    border-radius: 15px; 
+    display: block;
+    margin: 20px auto; 
 }
 
 .actividad1punto3 {
-    background-color: rgb(146, 151, 154);
-    padding: 5vw;
+    background-color: rgb(0, 0, 0);
+    padding: 0 0vw 10vw;
     margin: 1vW 2vw;
-    border-radius: 3vw;
+    border-radius: 3vw;;
+    color: #ffffff;
 } 
 
 .actividad1punto4 {
-    background-color: rgb(96, 101, 104);
+    background-color: rgb(24, 25, 26);
     padding: 5vw;
     margin: 1vW 2vw;
     border-radius: 3vw;
 } 
+.installnav {
+    background-color: rgba(0, 0, 0, 0.912);
+    border-radius: 3vw 3vw 0 0;
+    text-align: center;
+    padding: 1vw;
+    color: #ffffff;
+    
+}
+.installch {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 0vw;
+    color: #ffffff;
+    margin-top: 1vw;
+
+} .contenedor-flex {
+    display: flex;
+    align-items: center;         /* Centra verticalmente */
+    gap: 2vw;                    /* Espacio entre texto e imagen */
+    margin-top: 2vw;
+}
+
+/* Textos e imagen toman mitad y mitad */
+.texto1 {
+    flex: 1;
+    padding: 30px;
+}
+
+.espac-img {
+    flex: 1;
+}
+
+.espac-img img {
+    width: 100%;
+    max-width: 600px; 
+    border-radius: 10px;         /* Opcional */
+    margin: 0 auto;
+}
+
+.installbrave {
+    background-color: #000000;
+    text-align: center;
+    margin-top: 2vw;
+    color: #ffffff;
+}
+
+.highlight {
+    background: linear-gradient(120deg, #4b4de7 0%, #1cd81f 100%);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
 
 .actividad2punto1 {
-    background-color: rgb(198, 199, 205);
+    background-color: rgb(27, 55, 215);
     padding: 5vw;
     margin: 1vW 2vw;
     border-radius: 3vw;
 }
 
 .actividad2punto2 {
-    background: rgb(153, 162, 173);
+    background: rgb(255, 255, 255);
     padding: 5vw;
     margin: 1vW 2vw;
     border-radius: 3vw;
@@ -107,7 +179,7 @@ header {
     padding: 5vw;
     margin: 1vW 2vw;
     border-radius: 3vw;
-}
+} 
 
 .actividad3punto1 {
     background-color: rgb(255, 242, 1);
@@ -334,5 +406,11 @@ footer .icono-footer-whatsapp {
     }
     footer {
         font-size: 16px;
+    }
+
+@media (max-width: 768px) {
+    .contenedor-flex {
+        flex-direction: column;
+    }
     }
 }
