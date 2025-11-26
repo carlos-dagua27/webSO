@@ -26,24 +26,19 @@ header {
 }
 
 .integrantes {
-    background-color: rgb(221, 214, 214);
+    background-color: rgb(0, 0, 0);
     text-align: center;
     padding: 2vw;
-    margin: 1vW 2vw;
+    margin: 1vw 2vw;
     border-radius: 3vw;
-}
-
-.lista-integrantes {
     display: flex;
     justify-content: center;
-    gap: 34px;
-    flex-wrap: wrap;
+    gap: 40px;
 }
 
-.lista-integrantes p {
-    margin: 0;
-    font-size: 20px;
-    font-weight: 500;
+.integrantes p {
+    font-size: 22px;
+    font-weight: 600;
 }
 
 .introduccion {
@@ -61,7 +56,7 @@ header {
 }
 
 .actividad1punto1 {
-    background-color: rgb(48, 48, 49);
+    background-color: rgb(0, 0, 0);
     padding: 5vw;
     margin: 1vW 2vw;
     border-radius: 3vw;
@@ -83,15 +78,6 @@ header {
 
 } 
 
-.video-install video {
-    width: 100%;       /* Ocupa todo el ancho disponible */
-    max-width: 600px;  /* Tamaño máximo del video */
-    height: auto;      /* Mantiene proporción */
-    border-radius: 15px; 
-    display: block;
-    margin: 20px auto; 
-}
-
 .actividad1punto3 {
     background-color: rgb(0, 0, 0);
     padding: 0 0vw 10vw;
@@ -99,11 +85,49 @@ header {
     border-radius: 3vw;;
     color: #ffffff;
 } 
+
+.bloque {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+    max-width: 1100px;
+    gap: 40px;
+}
+
+.bloque .texto1 {
+    flex: 1;
+    padding: 30px;
+}
+
+.bloque .texto1 p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.bloque .espac-img {
+    flex: 1;
+}
+
+/* RESPONSIVE — igual que tu contenedor-flex original */
+@media (max-width: 768px) {
+    .bloque {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bloque .espac-img img {
+        width: 90%;
+        max-width: 350px;
+    }
+}
 .video-responsive {
     position: relative;
-    padding-bottom: 56.25%; /* Proporción 16:9 */
+    width: 100%;
+    padding-bottom: 56.25%; 
     height: 0;
     overflow: hidden;
+    margin: 1.5vw 0;
 }
 
 .video-responsive iframe {
@@ -112,7 +136,10 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
+    border: none;  
+    border-radius: 10px;  
 }
+
 .actividad1punto4 {
     background-color: rgb(24, 25, 26);
     padding: 5vw;
@@ -158,6 +185,10 @@ header {
     margin: 0 auto;
 }
 
+
+#actividad1 {
+    background-color: rgb(0, 0, 0);
+}
 .installbrave {
     background-color: #000000;
     text-align: center;
@@ -170,112 +201,6 @@ header {
     padding: 2px 6px;
     border-radius: 4px;
     font-weight: 600;
-}
-
-
-.actividad2punto1 {
-    background-color: rgb(27, 55, 215);
-    padding: 5vw;
-    margin: 1vW 2vw;
-    border-radius: 3vw;
-}
-
-.actividad2punto2 {
-    background: rgb(255, 255, 255);
-    padding: 5vw;
-    margin: 1vW 2vw;
-    border-radius: 3vw;
-}
-
-.actividad2punto3 {
-    background: rgb(106, 107, 109);
-    padding: 5vw;
-    margin: 1vW 2vw;
-    border-radius: 3vw;
-} 
-
-.actividad3punto1 {
-    background-color: rgb(255, 242, 1);
-    padding: 5vw;
-    margin: 1vW 2vw;
-    border-radius: 3vw;
-}
-
-.actividad3punto2 {
-    background-color: rgb(47, 0, 255);
-    padding: 5vw;
-    margin: 1vW 2vw;
-    border-radius: 3vw;
-}
-
-.actividad3punto3 {
-    background-color: rgb(255, 15, 15);
-    padding: 5vw;
-    margin: 1vW 2vw;
-    border-radius: 3vw;
-}
-
-.actividad4punto1 {
-    background-color: rgb(195, 206, 197);
-    padding: 5vw;
-    margin: 1vW 2vw;
-    border-radius: 3vw;
-}
-
-.actividad4punto2 {
-    background-color: rgb(155, 172, 166);
-    padding: 5vw;
-    margin: 1vW 2vw;
-    border-radius: 3vw;
-}
-
-.actividad4punto3 {
-    background-color: rgb(146, 142, 158);
-    padding: 5vw;
-    margin: 1vW 2vw;
-    border-radius: 3vw;
-}
-
-.actividad5punto1 {
-    background-color: rgb(178, 174, 186);
-    padding: 5vw;
-    margin: 1vW 2vw;
-    border-radius: 3vw;
-}
-
-.actividad5punto2 {
-    background-color: rgb(114, 112, 120);
-    padding: 5vw;
-    margin: 1vW 2vw;
-    border-radius: 3vw;
-}
-
-.actividad5punto3 {
-    background-color: rgb(102, 99, 107);
-    padding: 5vw;
-    margin: 1vW 2vw;
-    border-radius: 3vw;
-}
-
-.actividad6punto1 {
-    background-color: aliceblue;
-    padding: 5vw;
-    margin: 1vW 2vw;
-    border-radius: 3vw;
-}
-
-.actividad6punto2 {
-    background-color: rgb(154, 157, 160);
-    padding: 5vw;
-    margin: 1vW 2vw;
-    border-radius: 3vw;
-}
-
-.actividad6punto3 {
-    background-color: rgb(148, 155, 161);
-    padding: 5vw;
-    margin: 1vW 2vw;
-    border-radius: 3vw;
 }
 
 nav .logo {
@@ -426,4 +351,7 @@ footer .icono-footer-whatsapp {
         flex-direction: column;
     }
     }
+
+    
 }
+
