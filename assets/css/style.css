@@ -350,21 +350,40 @@ footer .icono-footer-whatsapp {
     .contenedor-flex {
         flex-direction: column;
     }
-    }
-
-    
+    }    
 }
 
-/* Carrusel de imagenes de ides y navegadores */
+/* ====== RESPONSIVE carrusel ====== */
+
+/* Tablets */
+@media (max-width: 900px) {
+    .slider {
+        max-width: 90%;
+        aspect-ratio: 16/10;
+    }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+    .slider {
+        max-width: 100%;
+        aspect-ratio: 4/3; /* más cuadrado para celulares */
+        border-radius: 8px;
+    }
+}
+
+/* Carrusel de imágenes responsive */
 
 /* Contenedor */
 .slider {
-    width: 700px;
-    height: 400px;
+    width: 100%;
+    max-width: 700px;   /* tamaño máximo */
+    aspect-ratio: 16/9; /* hace que siempre mantenga proporción */
     margin: auto;
     overflow: hidden;
     position: relative;
     border-radius: 12px;
+    background: #000; /* evita fondo blanco al cambiar imagen */
 }
 
 /* Contenedor de slides */
@@ -377,26 +396,25 @@ footer .icono-footer-whatsapp {
 /* Cada slide */
 .slide {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     opacity: 0;
     animation: fade 11.2s infinite; /* 2.8s x 4 imágenes */
 }
 
-/* Imágenes completas */
+/* Imágenes */
 .slide img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-/* Delays para cada imagen */
+/* Delays */
 .slide:nth-child(1) { animation-delay: 0s; }
 .slide:nth-child(2) { animation-delay: 2.8s; }
 .slide:nth-child(3) { animation-delay: 5.6s; }
 .slide:nth-child(4) { animation-delay: 8.4s; }
 
-/* Fade bonito */
+/* Animación */
 @keyframes fade {
     0% { opacity: 0; }
     5% { opacity: 1; }
@@ -404,3 +422,6 @@ footer .icono-footer-whatsapp {
     30% { opacity: 0; }
     100% { opacity: 0; }
 }
+
+
+
