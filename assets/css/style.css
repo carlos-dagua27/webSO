@@ -43,9 +43,7 @@ header {
 
 .introduccion {
     background-color: oklab(61.821000000000005% -0.04441 -0.2032);
-    padding: 7vw;
-    margin: 1vW 2vw;
-    border-radius: 3vw;
+    padding: 7vw; margin: 1vW 2vw; border-radius: 3vw;
 }
 
 .objetivosProyecto {
