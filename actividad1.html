@@ -45,7 +45,7 @@
                 <p>Con este video vemos el proceso de instalación de la 
                     distribución de Debian con interfaz gráfica GNOME.</p>
             </div>
-
+        
             <div class="video-responsive">
                 <iframe 
                     src="https://www.youtube.com/embed/Yne31N2ZyEw" 
@@ -53,105 +53,38 @@
                     allowfullscreen>
                 </iframe>
             </div>
-        </section>
+        
+            <!-- 🔽 Enlace agregado debajo del video -->
+            <div class="descarga-debian">
+                <p>Puedes descargar la imagen ISO oficial de Debian desde el siguiente enlace:</p>
+                <a href="https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/" 
+                   target="_blank">
+                    👉 Descargar ISO de Debian (64 bits)
+                </a>
+            </div>
+            <!-- 🔼 Enlace agregado -->
+        </section>   
 
+        <!-- Carrusel de prueba de los navegadores -->
         <section id="actividad1" class="actividad1punto3">
             <div class="installnav"> 
-                <h2>Instalación del navegadores</h2>
+                <h2>Funcionamiento de IDE y navegadores</h2>
             </div>
-            <div class="installch"> 
-                <h2>Chromium</h2>
+        <section class="slider">
+            <div class="slides">
+                <div class="slide"><img src="assets/imgs/PruebaChromiun.png"></div>
+                <div class="slide"><img src="assets/imgs/PruebaBrave.png"></div>
+                <div class="slide"><img src="assets/imgs/PruebaIntellij.png"></div>
+                <div class="slide"><img src="assets/imgs/PruebaVSCODE.png"></div>
             </div>
-            <div class="contenedor-flex">
-                <div class="texto1">
-                    <p>
-                        Para la instalación del navegador necesitamos abrir la terminal luego ingresamos el comando
-                        <span class="highlight">sudo apt install chromium</span> Ejecutamos en comando y 
-                        luego confirmamos la instalación con la letra "S" y comienza la instalación <br><br>
+        </section>
 
-                        Un tip, al escribir el comando 
-                        <span class="highlight">sudo apt install chromium -y</span>
-                    </p>
-                </div>
-            <div class="espac-img">
-                <img src="assets/imgs/terminal.png" alt="Instalación Debian">
-            </div>
-            </div>
-                 <div class="installch">
-                <h2>Brave</h2>
-                <p>NOTA:  Brave no esta en los repositorios oficiales de debian, sigue los pasos para su instalación</p></h5>
-            </div>
+  
+        </div>
+    </section>
+</section>
 
-<!-- BLOQUE 2 -->
-            <div class="contenedor-flex">
-                <div class="texto1">
-                    <p>Necesitas instalar <span class="highlight">sudo apt install curl -y</span> si no lo
-                     tenemos, porque sirve para descargar archivos desde internet directamente en la
-                     terminal. Luego usas curl para bajar la clave oficial del programa, que Debian necesita para comprobar
-                     que es segura. Después añades el repositorio del programa para que Debian sepa dónde buscar sus paquetes.
-                     Finalmente ejecutas apt update y apt install para que el sistema descargue e instale el software desde ese 
-                     repositorio confiable</p>
-                </div>
-            
-                <div class="espac-img">
-                    <img src="assets/imgs/curl.png" alt="Brave instalación">
-                </div>
-            </div>
-<!-- BLOQUE 3 -->
-            <div class="contenedor-flex">
-                <div class="texto1">
-                    <span class="highlight">sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg 
-                        https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg </span>
-                    <p>Este comando descarga la clave de seguridad que firma los paquetes del programa. La clave se guarda en
-                     una carpeta especial donde Debian busca claves confiables. Sin esa clave, Debian no permite instalar nada 
-                     del repositorio. Sirve para garantizar que los archivos no estén modificados ni falsificados.
-                    </p>
-                </div>
-            
-                <div class="espac-img">
-                    <img src="assets/imgs/sudo-curl.png" alt="Brave instalación">
-                </div>
-            </div>
-<!-- BLOQUE 4 -->
-            <div class="contenedor-flex">
-                <div class="texto1">
-                    <span class="highlight">echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] 
-                    https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave.list</span>
-                    <p>Este comando crea un archivo nuevo donde Debian guarda direcciones de repositorios externos. Allí le dices 
-                    dónde buscar las versiones oficiales del programa que quieres instalar. También le indicas qué clave debe usar
-                    para verificar esos paquetes. Sin agregar este repositorio, Debian no podría encontrar ni instalar ese software</p>
-                </div>
-            
-                <div class="espac-img">
-                    <img src="assets/imgs/echo.png" alt="Brave instalación">
-                </div>
-            </div>
-<!-- BLOQUE 5 -->
-            <div class="contenedor-flex">
-                <div class="texto1">
-                    <span class="highlight">sudo apt update</span>
-                    <p>Este comando hace que Debian lea los repositorios que tiene agregados. Descarga la lista actualizada de programas 
-                    disponibles desde cada fuente. Así el sistema sabe qué paquetes existen, qué versiones hay y desde dónde instalarlos.
-                    Es obligatorio después de agregar o modificar repositorios</p>
-                </div>
-            
-                <div class="espac-img">
-                    <img src="assets/imgs/sudo-apt-update.png" alt="Brave instalación">
-                </div>
-            </div>    
-<!-- BLOQUE 6 -->
-            <div class="contenedor-flex">
-                <div class="texto1">
-                    <span class="highlight">sudo apt install brave-browser -y</span>
-                    <p>Este comando instala el programa ahora que Debian ya sabe dónde encontrarlo. Descarga los archivos desde el 
-                    repositorio oficial y los instala automáticamente. La opción -y solo evita que el sistema pregunte confirmaciones.
-                    Así obtienes la aplicación lista para usar sin pasos adicionales.</p>
-                </div>
-            
-                <div class="espac-img">
-                    <img src="assets/imgs/sudobrave.png" alt="Brave instalación">
-                </div>
-            </div>          
+
 
     </main>
 
